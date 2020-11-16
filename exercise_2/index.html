@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	  <title>Quiz</title>
+	  <style type=text/css>
+		html * {
+		  font-size: 1.05em;
+		  color: #000;
+		  font-family: "Arial", monospace;
+		  background-color: LightBlue;
+		  text-align: center;
+		}
+		
+		.list {
+		  position: fixed;
+		  top: 50%;
+		  left:50%;
+		}
+		
+		table {
+		  width: 60%;
+		  margin-left:auto;
+		  margin-right:auto
+
+		}
+		
+		th {
+		  border: 4px solid black;
+		  height: 50px;
+		  padding: 20px;
+		}
+		
+		td {
+		  border: 4px solid black;
+		  padding: 15px;
+		}
+	  </style>
+	  
+	</head>
+	<body>
+		  
+	  <table>
+		<tr>
+		<th> Quiz </th>
+		</tr>
+	   
+	   <form action="quiz.php" method="post">
+	   <tr>
+		<td>
+			<b> 1: Which brand of phone do people in the US purchase most? </b><br>
+			<input type="radio" id="apple" name="phone" value="Apple" style="vertical-align: middle; margin: 0px;">
+			<label for="apple"> a) Apple </label><br>
+			
+			<input type="radio" id="samsung" name="phone" value="Samsung" style="vertical-align: middle; margin: 0px;">
+			<label for="samsung"> b) Samsung </label><br>
+			
+			<input type="radio" id="google" name="phone" value="Google" style="vertical-align: middle; margin: 0px;">
+			<label for="google"> c) Google </label><br>
+			
+			<input type="radio" id="nokia" name="phone" value="Nokia" style="vertical-align: middle; margin: 0px;">
+			<label for="nokia"> d) Nokia </label><br>
+		</td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+			<b> 2: Most popular sport in US?  </b><br>
+			<input type="radio" id="football" name="sport" value="Football" style="vertical-align: middle; margin: 0px;">
+			<label for="football"> a) Football </label><br>
+			
+			<input type="radio" id="soccer" name="sport" value="Soccer" style="vertical-align: middle; margin: 0px;">
+			<label for="soccer"> b) Soccer </label><br>
+			
+			<input type="radio" id="tennis" name="sport" value="Tennis" style="vertical-align: middle; margin: 0px;">
+			<label for="tennis"> c) Tennis </label><br>
+			
+			<input type="radio" id="basketball" name="sport" value="Basketball" style="vertical-align: middle; margin: 0px;">
+			<label for="basketball"> d) Basketball </label><br>
+		</td>
+	   </tr>
+	   
+		<tr>
+		<td>
+			<b> 3: Most mountainous country? </b><br>
+			<input type="radio" id="greenland" name="mountain" value="Greenland">
+			<label for="greenland"> a) Greenland </label><br>
+			
+			<input type="radio" id="peru" name="mountain" value="Peru">
+			<label for="peru"> b) Peru </label><br>
+			
+			<input type="radio" id="lesotho" name="mountain" value="Lesotho">
+			<label for="lesotho"> c) Lesotho </label><br>
+			
+			<input type="radio" id="bhutan" name="mountain" value="Bhutan">
+			<label for="bhutan"> d) Bhutan </label><br>
+		</td>
+	   </tr>
+	   
+		<tr>
+		<td>
+			<b> 4: Which type of bear can't climb trees? </b><br>
+			<input type="radio" id="brown" name="bear" value="Brown Bear">
+			<label for="brown"> a) Brown Bear </label><br>
+			
+			<input type="radio" id="black" name="bear" value="Black Bear">
+			<label for="black"> b) Black Bear </label><br>
+			
+			<input type="radio" id="koala" name="bear" value="Koala Bear">
+			<label for="koala"> c) Koala Bear </label><br>
+			
+			<input type="radio" id="polar" name="bear" value="Polar Bear">
+			<label for="polar"> d) Polar Bear </label><br>
+		</td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+			<b> 5: Most common language? </b><br>
+			<input type="radio" id="french" name="language" value="French">
+			<label for="french"> b) French </label><br>
+			
+			<input type="radio" id="chinese" name="language" value="Mandarin">
+			<label for="chinese"> c) Mandarin </label><br>
+			
+			<input type="radio" id="english" name="language" value="English">
+			<label for="english"> a) English </label><br>
+			
+			<input type="radio" id="hindi" name="language" value="Hindi">
+			<label for="hindi"> d) Hindi </label><br>
+		</td>
+	   </tr>
+	   
+	   <tr>
+		<td> <input type="submit" value="Submit">
+	   </tr>
+	   </form>
+	   
+	 </table>
+	</body>
+</html>

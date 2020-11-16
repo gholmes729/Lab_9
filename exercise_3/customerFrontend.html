@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	  <title>Store</title>
+	  <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		  
+	  <table>
+		<tr>
+		<th><h1> My Store!!! </h1></th>
+		</tr>
+	   
+	   <form id="form" action="customerBackend.php" method="post">
+	   <tr>
+		<td>
+			<b> 1: Select Items </b><br>
+				<label for="seeds"> Strange Seeds ($5) </label>
+				<input type="number" id="seeds" name="seeds" min="0" value="Strange Seeds ($5)" style="width: 7%"><br>
+		
+				<label for="umbrella"> Cursed Umbrella ($10) </label>
+				<input type="number" id="umbrella" name="umbrella" min="0" value="Cursed Umbrella ($10)" style="width: 7%"><br>
+				
+				<label for="bandana"> Sodden Bandana ($100) </label>
+				<input type="number" id="bandana" name="bandana" min="0" value="Sodden Bandana ($100)" style="width: 7%"><br>
+			
+		</td>
+	   </tr>
+	   
+		<tr>
+		<td>
+			<b> 2: Shipping </b><br>
+			<input type="radio" id="free" name="shipping" value="Free">
+			<label for="free"> Free 7 Day </label><br>
+			
+			<input type="radio" id="overnight" name="shipping" value="$50 Overnight">
+			<label for="overnight"> $50 Overnight </label><br>
+			
+			<input type="radio" id="three" name="shipping" value="$5 Three Day">
+			<label for="three"> $5 Three Day </label><br>
+			
+		</td>
+	   </tr>
+	
+		<tr>
+		<td>
+		<b> 3: Login </b><br>
+		<label>Username: </label><input type="text" id="username" name="user" style="background-color: white"><br>
+		<label>Password: </label><input type="text" id="password" name="pswd" style="background-color: white"><br>
+		</td>
+	   </tr>
+	   
+	   <tr>
+		<td> <input type="button" value="Submit" onclick="checkValid()">
+			<input type="reset" value="Reset">
+	   </tr>
+	   </form>
+	   
+	 </table>
+	</body>
+	<script src="formChecker.js"></script>
+</html>
